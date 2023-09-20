@@ -1,0 +1,96 @@
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ ls
+March-25-Calculator-building/  March-28/  calulator/
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git add 'calulator'
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git status
+On branch kosy
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   March-25-Calculator-building
+        new file:   March-28
+        new file:   calulator/ball.css
+        new file:   calulator/cat.js
+        new file:   calulator/image/favicon-32x32.png
+        new file:   calulator/index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   March-25-Calculator-building (untracked content)
+
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git rm --cached 'march-28'
+fatal: pathspec 'march-28' did not match any files
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git rm --cached 'March-28'
+error: the following file has staged content different from both the
+file and the HEAD:
+    kosy/March-28
+(use -f to force removal)
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git rm -f --cached 'March-28'
+rm 'kosy/March-28'
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git rm -f --cached 'March-25-Calculator-building'
+rm 'kosy/March-25-Calculator-building'
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git status
+On branch kosy
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   calulator/ball.css
+        new file:   calulator/cat.js
+        new file:   calulator/image/favicon-32x32.png
+        new file:   calulator/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        March-25-Calculator-building/
+        March-28/
+
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ ls
+March-25-Calculator-building/  March-28/  calulator/
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git commit -m "first commit"
+[kosy 9ae5a40] first commit
+ 4 files changed, 475 insertions(+)
+ create mode 100644 kosy/calulator/ball.css
+ create mode 100644 kosy/calulator/cat.js
+ create mode 100644 kosy/calulator/image/favicon-32x32.png
+ create mode 100644 kosy/calulator/index.html
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ git push --set-upstream origin 'kosy'
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 4.65 KiB | 1.55 MiB/s, done.
+Total 9 (delta 0), reused 1 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'kosy' on GitHub by visiting:
+remote:      https://github.com/Kosisochii/Class-Projects/pull/new/kosy
+remote:
+To https://github.com/Kosisochii/Class-Projects.git
+ * [new branch]      kosy -> kosy
+branch 'kosy' set up to track 'origin/kosy'.
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$ ^C
+
+HP@Kosisochukwu MINGW64 ~/Balance/Class-Projects/kosy (kosy)
+$
